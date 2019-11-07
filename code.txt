@@ -1,0 +1,63 @@
+
+<script>
+    $.ajax({
+   url: '_login.php',
+   data: {
+      format: 'json'
+   },
+   error: function() {
+      $('#info').html('<p>An error has occurred</p>');
+   },
+   dataType: 'jsonp',
+   success: function(data) {
+      var $title = $('<h1>').text(data.talks[0].talk_title);
+      var $description = $('<p>').text(data.talks[0].talk_description);
+      $('#info')
+         .append($title)
+         .append($description);
+   },
+   type: 'GET'
+});
+
+</script>
+
+------------------------+
+user
+------------------------+
+-profile
+-my policies
+-claim policy
+-payment
+-apply policy format
+-print challan
+-agent registration
+-know agents
+-about us
+-terms and conditions
+------------------------+
+admin
+------------------------+
+-login
+-change password
+-all policies
+-all users
+-verify policy
+-verify claim
+-verify agents
+------------------------+
+
+
+<div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFile">
+  <label class="custom-file-label" for="customFile">Choose file</label>
+</div>
+
+activate
+0-not applied & not activated
+1-activated
+2-applied & not activate
+
+claim
+0-applied
+1-activated
+2-rejected

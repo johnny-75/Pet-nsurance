@@ -1,0 +1,428 @@
+
+/* @media (min-width: 992px), @media (min-width: 768px) @media (min-width: 576px) @media (min-width: 1200px) */
+/* *-muted changes the color to gray #868e96
+*-primary changes the color to blue #007bff
+*-success changes the color to green #28a745
+*-info changes the color to purple #17a2b8
+*-warning changes the color to yellow #ffc107
+*-danger changes the color to red #dc3545
+*-secondary changes the color to gray #868e96
+*-white changes the color to white #ffffff.
+*-dark changes the color to dark gray #343a40
+*-light changes the color to light gray #f8f9fa */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+/* font-family: 'Crimson Text', serif; */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+/* font-family: 'Cabin', sans-serif; */
+@font-face {
+    font-family: 'Cookie';
+    src: url('../fonts/Cookie-Regular.eot');
+    src: url('../fonts/Cookie-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cookie-Regular.woff2') format('woff2'),
+        url('../fonts/Cookie-Regular.woff') format('woff'),
+        url('../fonts/Cookie-Regular.ttf')  format('truetype'),
+        url('../fonts/Cookie-Regular.svg#Cookie-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Leckerli One';
+    src: url('../fonts/LeckerliOne-Regular.eot');
+    src: url('../fonts/LeckerliOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LeckerliOne-Regular.woff2') format('woff2'),
+        url('../fonts/LeckerliOne-Regular.woff') format('woff'),
+        url('../fonts/LeckerliOne-Regular.ttf') format('truetype'),
+        url('../fonts/LeckerliOne-Regular.svg#LeckerliOne-Regular') format('svg');
+}
+/* @import url('https://fonts.googleapis.com/css?family=Cookie'); */
+/* font-family: 'Cookie', cursive; cursive */
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+/* font-family: 'Hammersmith One', sans-serif; Headings */
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/* font-family: 'Lobster', cursive; stylish */
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/* font-family: 'Lobster', cursive; Cursive 2 */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* font-family: 'Pacifico', cursive; cursive 3 */
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+/* font-family: 'Slabo 27px', serif; common for content */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* font-family: 'Open Sans', sans-serif; Most used */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* font-family: 'Roboto', sans-serif; Most used 2 */
+@import url('https://fonts.googleapis.com/css?family=Rochester');
+/* font-family: 'Rochester', cursive; Title */
+/* @import url('https://fonts.googleapis.com/css?family=Leckerli+One'); */
+/* font-family: 'Leckerli One', cursive; Sub title */
+button:focus, input:focus{ outline-color: transparent;
+    outline-style: none; }
+.form-inline .form-group > input{
+    border: none;
+    background: #0f292f solid;
+    border-radius: 0%;
+    transition: border-bottom-color 0.8s;
+    -webkit-transition: border-bottom-color 0.8s;
+    -moz-transition: border-bottom-color 0.8s;
+    -ms-transition: border-bottom-color 0.8s;
+    -o-transition: border-bottom-color 0.8s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+.form-inline .form-control{
+    background-color: #0f292f;
+}
+  .form-inline .form-group > input:focus{
+      border-bottom: 1px solid  ;
+      border-bottom-color: rgba(255, 255, 255,0.75);
+      border-width: 1px;
+      box-shadow: none;
+  }
+  .form-control:focus,.btn:focus{
+    box-shadow: none;
+  }
+  .navbar{
+      padding:0px;
+  }
+  .jumbotron{
+      border-radius: 0%  ;
+      -webkit-border-radius: 0%  ;
+      -moz-border-radius: 0%  ;
+      -ms-border-radius: 0%  ;
+      -o-border-radius: 0%  ;
+}
+.menu-text{
+    font-weight: 700;
+    color: rgb(83, 82, 82);
+    display: none;
+}
+@media (max-width: 768px){
+    .menu-text{
+        display: block;
+    }  
+}
+.navbar-text{
+    font-family: 'Leckerli One', cursive;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: black;
+}
+.jumbotron-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/main_home_pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: brightness(75%);
+    -webkit-filter: brightness(75%); */
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+.jumbotron-bg .container{
+    filter:brightness(100%);
+    /* background: rgba(255, 255, 255, 0.507); */
+    padding: 50px 100px 50px 100px;
+    max-width: 650px;
+    -webkit-filter:brightness(100%);
+}
+.btn-text{
+    text-shadow:0 0 0;
+}
+@media (min-width:992px){
+.jumbotron .container{
+    margin-right: 3%;
+}
+}
+
+@media (max-width:768px){
+    .p_hide{
+        display: none;
+    }
+}
+@media (max-width:992px){
+    .form-inline{
+        display: none;
+    }
+}
+.divide{
+    border-right: 1px;
+}
+@media (max-width:768px){
+    .form-inline{
+        display: block;
+    }
+    .divide{
+        border-right: 0px;
+        border-bottom: 1px;
+    }
+}
+
+.carousel-control-prev, .carousel-control-next,.carousel-control-prev:hover, .carousel-control-next:hover,.carousel-control-prev:focus, .carousel-control-next:focus{
+    opacity: .5;
+    background: black;
+    width: 33.4%;
+}
+.fa-check-circle{
+    color:#14a098;
+}
+.social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 25px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.social-top [class*="fa fa-"]{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: auto 3px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    align-items: flex-end;
+    color: #333;
+    margin: none;
+}
+.social [class*="fa fa-"]:hover { 
+    background-color: #14a098;
+    color: white;
+}
+.row .divider-vertical {
+    height: 150px;
+    margin: 0 9px;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #ffffff;
+    }
+    @media (max-width: 768px){.row .divider-vertical {height:0;border-left: 0;border-right: 0;} }
+
+    .pro-title{
+        font-family: 'Leckerli One', cursive;
+        color: #343a40;
+    }
+    .pro-subtitle{
+        font-family: 'Cookie'; 
+        font-size: 30px;
+        margin-top: -15px;
+    }
+    .navbar{
+        background-color: #0f292f;
+    }
+    .moblile{
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #868e96;
+        float: right;
+        margin-right: 25px;
+    }
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,2255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+      
+      .navbar-dark .navbar-toggler {
+        border-color: white;
+      } 
+
+      .headder .title-img{
+          float: left;
+          margin-left: 5px;
+      }
+@media (max-width: 768px){
+    .headder .titles {
+        text-align: right;
+        padding-right: 30px;
+        margin: auto;
+        padding-bottom: 0px;
+    } 
+}
+@media (max-width: 768px){
+    .headder .moblile {
+        display: none;
+    } 
+}
+@media (max-width: 768px){
+    .form-inline .search-icon {
+        display: none;
+    } 
+}
+
+.form-inline .search-icon {
+    color: rgba(255,255,255,.75);
+} 
+
+.nav-item .btn{
+    color:rgba(255,255,255,.5);
+}
+
+.nav-item .btn:hover{
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+}
+.nav-item .btn:focus{
+    text-decoration: none;
+}
+
+.form-group .custom-input:focus{
+    border: 1px solid #868e96;
+}
+.top{
+    height: 30px;
+}
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+    -webkit-animation: come-in 0.8s ease forwards;
+}
+  .come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+  }
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
+
+  .content-model{
+      width:60%;
+      margin:auto; 
+        }
+  @media (max-width: 768px){
+    .content-model{
+      width:95%;
+      border: 0px;
+    }
+  }
+  @media (max-width: 992px){
+    .border-sm{
+        border-right:0px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+        margin-bottom: 3rem;
+    }
+  }
+  .text-hedding{
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: bolder;
+      font-size: 1.5em;
+      font-family: 'Work Sans', sans-serif;
+  }
+  .text-content{
+    font-family: 'Cabin', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+  }
+
+  .social-reg [class*="fa fa-"]{
+    width: 40px;
+    height: 40px;
+    border-radius: 0px;
+    margin: auto 3px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    align-items: flex-end;
+    color: #333;
+    margin: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border:  2px rgba(0, 0, 0, 0.7) solid;
+    transition: background-color 0.8s;
+    -webkit-transition: background-color 0.8s;
+    -moz-transition: background-color 0.8s;
+    -ms-transition: background-color 0.8s;
+    -o-transition: background-color 0.8s;
+    transition: color 0.8rs;
+    -webkit-transition: color 0.8s;
+    -moz-transition: color 0.8s;
+    -ms-transition: color 0.8s;
+    -o-transition: color 0.8s;
+}
+.social-reg [class*="fa fa-facebook"]:hover { 
+    background-color: #3B5998;
+    color: white;
+}
+
+.social-reg [class*="fa fa-twitter"]:hover { 
+    background-color: #1DA1F2;
+    color: white;
+}
+.social-reg [class*="fa fa-dribbble"]:hover { 
+    background-color: #ea4c89;
+    color: white;
+}
+.social-reg [class*="fa fa-linkedin"]:hover { 
+    background-color: #0077B5;
+    color: white;
+}
+.social-reg [class*="fa fa-vk"]:hover { 
+    background-color: #4c75a3;
+    color: white;
+}
+.panel{
+    width: 80% !important;
+    margin: auto;
+    padding: 0;
+}
+
+.bg{
+    margin: 0%;
+    min-width: 100% !important;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 3%;
+    margin-bottom: -10px;
+}
+.icon-circle .fa{
+    height: 7rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: 7rem;
+    background-color: rgba(0, 0, 0, .1);
+    font-size: 5rem;
+    padding-top: .88rem;
+    border-radius: 3.5rem;
+    
+}
+.panel-text{
+    color: rgb(20,160,152);
+}
+.panel-texthead{
+    text-shadow:2px 2px rgba(20,160,152,.2  );
+}
+.panel-fo:hover{
+    border: 1px solid rgba(20,160,152, 0.4);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+}
+.p-title{
+    font-weight: 500;
+    text-align:center;
+    color: #14a098;
+    font-size: 2rem;
+    padding: 10px;
+    padding-top: 0px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+.transparent{
+    background: rgba(0, 0, 0, .05);
+}
+.shadow{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+}
+.clr-primary{
+    background-color:#0f292f;
+}
+.clr-secondary{
+    background-color:#14a098;
+}
